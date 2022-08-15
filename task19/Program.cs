@@ -16,15 +16,13 @@ if (num < 10000 | num >99999)
     num3=num/100%10;
     num4=num%100/10;
     num5=num%10;
-    Console.WriteLine(num1)
-    Console.WriteLine(num2);
-    Console.WriteLine(num3);
-    Console.WriteLine(num4);
-    Console.WriteLine(num5);
 }
 if((num1==num5) &&  (num2==num4))
 {
-    Console.WriteLine ({num} "-является палинромом");
+    Console.WriteLine ($"{num} -является палинромом");
 }
-
+else
+{
+    Console.WriteLine($"{num} - не является палинромом");
+}
 
