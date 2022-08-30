@@ -22,7 +22,7 @@ double[,] GetArray(int m, int n, int minValue, int maxValue)
     {
         for(int j=0; j<n; j++)
         {
-           array[i,j]=new Random().Next(minValue,maxValue);
+           array[i,j]=new Random().Next(minValue,maxValue)+ new Random().NextDouble();
         }
     }
     return array;
