@@ -11,10 +11,16 @@ Console.WriteLine("Введите колиечство столбцов масс
 int cols= int.Parse(Console.ReadLine());
 
 int[,] arr= GetArray(row, cols, 1, 9);
+if (row==cols)
+{
+   Console.WriteLine("массив не является прямоугольным");
+}
+else
+{
 PrintArray(arr);
 Console.WriteLine();
 SumArray(arr);
-
+}
 
 
 
